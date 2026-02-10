@@ -1,0 +1,113 @@
+/**
+ * DESIGN TOKENS - SEMÁNTICOS
+ * Tokens contextuales que mapean los primitivos a usos específicos
+ * Estos son los que se deben usar en los componentes
+ */
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* === COLORES DE MARCA === */
+  --semantic-brand-primary: var(--primitive-color-yellow-500);
+  --semantic-brand-secondary: var(--primitive-color-blue-800);
+  
+  /* === COLORES DE SUPERFICIE === */
+  --semantic-surface-background: var(--primitive-color-blue-100);
+  --semantic-surface-header: var(--primitive-color-blue-100);
+  --semantic-surface-section-primary: var(--primitive-color-white);
+  --semantic-surface-section-secondary: var(--primitive-color-blue-100);
+  --semantic-surface-section-dark: var(--primitive-color-black);
+  --semantic-surface-card: var(--primitive-color-white);
+  --semantic-surface-overlay: rgba(255, 255, 255, var(--primitive-opacity-30));
+  
+  /* === COLORES DE TEXTO === */
+  --semantic-text-primary: var(--primitive-color-blue-800);
+  --semantic-text-secondary: var(--primitive-color-blue-900);
+  --semantic-text-inverse: var(--primitive-color-white);
+  --semantic-text-inverse-muted: rgba(255, 255, 255, var(--primitive-opacity-90));
+  --semantic-text-brand: var(--primitive-color-yellow-500);
+  --semantic-text-muted: var(--primitive-color-gray-900);
+  
+  /* === COLORES DE BOTÓN === */
+  --semantic-button-primary-bg: var(--primitive-color-yellow-500);
+  --semantic-button-primary-text: var(--primitive-color-black);
+  --semantic-button-secondary-bg: transparent;
+  --semantic-button-secondary-text: var(--primitive-color-yellow-400);
+  --semantic-button-secondary-border: var(--primitive-color-yellow-400);
+  --semantic-button-icon: var(--primitive-color-blue-700);
+  
+  /* === COLORES DE BORDE === */
+  --semantic-border-default: var(--primitive-color-yellow-400);
+  
+  /* === COLORES DE ESTADO === */
+  --semantic-state-active: var(--primitive-color-gray-900);
+  --semantic-state-inactive: var(--primitive-color-gray-900);
+  --semantic-state-hover: var(--primitive-color-gray-800);
+  
+  /* === ESPACIADO DE COMPONENTES === */
+  --semantic-spacing-header-x: 50px;
+  --semantic-spacing-section-x: var(--primitive-spacing-9xl);
+  --semantic-spacing-section-y: var(--primitive-spacing-7xl);
+  --semantic-spacing-card-gap: var(--primitive-spacing-md);
+  --semantic-spacing-button-x: var(--primitive-spacing-2xl);
+  --semantic-spacing-button-y: var(--primitive-spacing-lg);
+  
+  /* === BORDES REDONDEADOS === */
+  --semantic-radius-button: var(--primitive-radius-sm);
+  --semantic-radius-card: var(--primitive-radius-xl);
+  --semantic-radius-overlay: var(--primitive-radius-lg);
+  
+  /* === TIPOGRAFÍA === */
+  --semantic-font-heading-primary: var(--primitive-font-family-neulis);
+  --semantic-font-heading-secondary: var(--primitive-font-family-inter);
+  --semantic-font-body: var(--primitive-font-family-inter);
+  --semantic-font-icon: var(--primitive-font-family-fontawesome);
+  
+  /* === TAMAÑOS DE FUENTE SEMÁNTICOS === */
+  --semantic-font-size-nav: var(--primitive-font-size-xs);
+  --semantic-font-size-body: var(--primitive-font-size-sm);
+  --semantic-font-size-body-lg: var(--primitive-font-size-md);
+  --semantic-font-size-logo: var(--primitive-font-size-lg);
+  --semantic-font-size-h3: var(--primitive-font-size-xl);
+  --semantic-font-size-h2: var(--primitive-font-size-2xl);
+  --semantic-font-size-h1: var(--primitive-font-size-3xl);
+  
+  /* === LAYOUT === */
+  --semantic-layout-header-height: var(--primitive-header-height);
+  --semantic-layout-max-width: 1440px;
+  --semantic-layout-card-width: var(--primitive-card-width);
+  --semantic-layout-card-image-height: var(--primitive-card-image-height);
+}
+
+/* === TEMA OSCURO === */
+.dark {
+  /* === COLORES DE SUPERFICIE === */
+  --semantic-surface-background: var(--primitive-color-black);
+  --semantic-surface-header: var(--primitive-color-black);
+  --semantic-surface-section-primary: var(--primitive-color-black);
+  --semantic-surface-section-secondary: var(--primitive-color-black);
+  --semantic-surface-section-dark: var(--primitive-color-black);
+  --semantic-surface-card: var(--primitive-color-black);
+  --semantic-surface-overlay: rgba(255, 255, 255, var(--primitive-opacity-30));
+  
+  /* === COLORES DE TEXTO === */
+  --semantic-text-primary: var(--primitive-color-yellow-300);
+  --semantic-text-secondary: var(--primitive-color-yellow-300);
+  --semantic-text-inverse: var(--primitive-color-white);
+  --semantic-text-inverse-muted: rgba(255, 255, 255, var(--primitive-opacity-90));
+  --semantic-text-brand: var(--primitive-color-yellow-500);
+  --semantic-text-muted: var(--primitive-color-gray-900);
+  
+  /* === COLORES DE BOTÓN === */
+  --semantic-button-primary-bg: var(--primitive-color-yellow-500);
+  --semantic-button-primary-text: var(--primitive-color-gray-900);
+  --semantic-button-secondary-bg: transparent;
+  --semantic-button-secondary-text: var(--primitive-color-yellow-400);
+  --semantic-button-secondary-border: var(--primitive-color-yellow-400);
+  --semantic-button-icon: var(--primitive-color-yellow-500);
+  
+  /* === COLORES DE ESTADO === */
+  --semantic-state-active: var(--primitive-color-green-400);
+  --semantic-state-inactive: var(--primitive-color-gray-100);
+  --semantic-state-hover: var(--primitive-color-green-400);
+}
