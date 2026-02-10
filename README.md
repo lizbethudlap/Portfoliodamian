@@ -1,7 +1,7 @@
 
-  # Generar código y librerías
+  # Damian
 
-  This is a code bundle for Generar código y librerías. The original project is available at https://www.figma.com/design/Qu0bEkQz4c0gBVl52DPq5D/Generar-c%C3%B3digo-y-librer%C3%ADas.
+  This is a code bundle for Damian. The original project is available at https://www.figma.com/design/Qu0bEkQz4c0gBVl52DPq5D/Damian.
 
   ## Running the code
 

@@ -1,0 +1,75 @@
+/**
+ * DESIGN TOKENS - PRIMITIVOS
+ * Valores base del sistema de diseño
+ * Estos tokens son los bloques fundamentales que no cambian entre temas
+ */
+
+@theme {
+  /* === COLORES PRIMITIVOS === */
+  --color-primitive-black: #000000;
+  --color-primitive-gray-900: #101111;
+  --color-primitive-gray-800: #283833;
+  --color-primitive-gray-100: #eef1f2;
+  --color-primitive-white: #ffffff;
+  
+  --color-primitive-blue-900: #00103c;
+  --color-primitive-blue-800: #001c56;
+  --color-primitive-blue-700: #004cc6;
+  --color-primitive-blue-100: #c6cfff;
+  
+  --color-primitive-green-400: #bef0e0;
+  
+  --color-primitive-yellow-500: #ddff00;
+  --color-primitive-yellow-400: #ccdb2a;
+  --color-primitive-yellow-300: #cee10a;
+  
+  /* === ESPACIADOS PRIMITIVOS === */
+  --spacing-primitive-xs: 10px;
+  --spacing-primitive-sm: 11px;
+  --spacing-primitive-md: 12px;
+  --spacing-primitive-lg: 16px;
+  --spacing-primitive-xl: 19px;
+  --spacing-primitive-2xl: 20px;
+  --spacing-primitive-3xl: 21px;
+  --spacing-primitive-4xl: 47px;
+  --spacing-primitive-5xl: 48px;
+  --spacing-primitive-6xl: 49px;
+  --spacing-primitive-7xl: 61px;
+  --spacing-primitive-8xl: 76px;
+  --spacing-primitive-9xl: 100px;
+  
+  /* === RADIOS PRIMITIVOS === */
+  --radius-primitive-sm: 8px;
+  --radius-primitive-md: 9.38px;
+  --radius-primitive-lg: 16px;
+  --radius-primitive-xl: 20px;
+  
+  /* === TIPOGRAFÍA PRIMITIVA - TAMAÑOS === */
+  --font-size-primitive-xs: 14px;
+  --font-size-primitive-sm: 16px;
+  --font-size-primitive-md: 18px;
+  --font-size-primitive-lg: 20px;
+  --font-size-primitive-xl: 30px;
+  --font-size-primitive-2xl: 48px;
+  --font-size-primitive-3xl: 56px;
+  
+  /* === TIPOGRAFÍA PRIMITIVA - LINE HEIGHT === */
+  --line-height-primitive-tight: 1.109;
+  --line-height-primitive-snug: 24px;
+  --line-height-primitive-normal: 28px;
+  --line-height-primitive-relaxed: 36px;
+  --line-height-primitive-loose: 56px;
+  
+  /* === TIPOGRAFÍA PRIMITIVA - PESOS === */
+  --font-weight-primitive-normal: 400;
+  --font-weight-primitive-medium: 500;
+  --font-weight-primitive-semibold: 600;
+  
+  /* === TIPOGRAFÍA PRIMITIVA - FAMILIAS === */
+  --font-family-primitive-inter: 'Inter', sans-serif;
+  --font-family-primitive-neulis: 'Neulis Cursive', sans-serif;
+  
+  /* === OPACIDADES PRIMITIVAS === */
+  --opacity-primitive-90: 0.9;
+  --opacity-primitive-30: 0.3;
+}
