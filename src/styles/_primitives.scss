@@ -1,0 +1,154 @@
+/**
+ * DESIGN TOKENS - PRIMITIVOS
+ * Valores base del sistema de diseño
+ * Estos tokens son los bloques fundamentales que no cambian entre temas
+ */
+
+@theme {
+  /* === COLORES PRIMITIVOS === */
+
+  /* Blue */
+  --color-blue-50: oklch(0.9314250073147285 0.03294648751657391 276.3815783199579);
+  --color-blue-100: oklch(0.8635745887588918 0.06739903987496611 276.58569128919817);
+  --color-blue-200: oklch(0.7296788711185269 0.1392194815896396 269.61011382986163);
+  --color-blue-300: oklch(0.5946721172722629 0.2210901265818776 260.63685173564477);
+  --color-blue-400: oklch(0.4741935939986343 0.2084162958996541 261.26599358816054);
+  --color-blue-500: oklch(0.4629577937989769 0.20073233235620772 261.0526890981506);
+  --color-blue-600: oklch(0.359716068178493 0.1586027242216371 261.3146176415953);
+  --color-blue-700: oklch(0.3053352313762635 0.13443184592091983 261.29254344215354);
+  --color-blue-800: oklch(0.25281165121431126 0.11066637457804968 261.2032452751047);
+  --color-blue-900: oklch(0.19616731490393066 0.08854928884325566 261.66294427941216);
+  --color-blue-950: oklch(0.13159014696910695 0.04926825498249106 262.62943073366824);
+
+  /* Green */
+  --color-green-50: oklch(0.9624943768661184 0.022918874303774647 172.86475019474057);
+  --color-green-100: oklch(0.9159875414240218 0.05565930961275494 173.49760523546655);
+  --color-green-200: oklch(0.8467676548722036 0.05967237652933218 173.10794213109264);
+  --color-green-300: oklch(0.7700325082491932 0.05414995636775014 173.21292550582797);
+  --color-green-400: oklch(0.6978011511056746 0.048404640713647064 173.37627203128187);
+  --color-green-500: oklch(0.6069759334500058 0.042685796380372384 173.51558772263266);
+  --color-green-600: oklch(0.51328500836215 0.03576679070899437 173.09457762744694);
+  --color-green-700: oklch(0.4180298775181207 0.029506548403740902 173.26352027019806);
+  --color-green-800: oklch(0.324785584730056 0.02279693086449123 173.63204320149063);
+  --color-green-900: oklch(0.2314850238574343 0.01746389138043727 170.33702340596582);
+  --color-green-950: oklch(0.17410101259079475 0.01154202897798471 175.47167874786442);
+
+  /* Cream */
+  --color-cream-50: oklch(0.9576261806731398 0.008586048942942891 67.72298789519374);
+  --color-cream-100: oklch(0.9223392653017566 0.016171179233074044 58.62535724734183);
+  --color-cream-200: oklch(0.8386727001975018 0.04120643795644826 63.58472591626241);
+  --color-cream-300: oklch(0.7574605894680216 0.051166454256727986 63.92734074367794);
+  --color-cream-400: oklch(0.6665880518887143 0.04452822562575719 64.5666854447076);
+  --color-cream-500: oklch(0.5800582977024802 0.03942835184532358 65.53132198385798);
+  --color-cream-600: oklch(0.49394443879277966 0.03302644006809678 65.21374535367319);
+  --color-cream-700: oklch(0.407317579147209 0.027390158586426964 66.92909288780864);
+  --color-cream-800: oklch(0.3120993019211771 0.020279846121147586 66.96747150235531);
+  --color-cream-900: oklch(0.22410000413460826 0.015794816455314904 62.48598517589554);
+  --color-cream-950: oklch(0.17787918396727803 0.01158355817877099 60.61705207212459);
+
+  /* Gray */
+  --color-gray-50: oklch(0.956147338424783 0.003487082131875756 219.53371137945376);
+  --color-gray-100: oklch(0.9138205922710204 0.00766921548971363 207.139534210392);
+  --color-gray-200: oklch(0.8352860596860328 0.011758695717150556 217.55856294378603);
+  --color-gray-300: oklch(0.7477939464670798 0.011038084238854337 219.62271343478974);
+  --color-gray-400: oklch(0.6705105410785508 0.00973534975587768 214.36131819180318);
+  --color-gray-500: oklch(0.584464637330169 0.0089366897284545 216.66537756246316);
+  --color-gray-600: oklch(0.49122344281375535 0.007673686467736722 208.7610324201021);
+  --color-gray-700: oklch(0.404874790616819 0.006770667417947542 211.039644775803);
+  --color-gray-800: oklch(0.31852205930603533 0.004555939241184282 219.6187248846134);
+  --color-gray-900: oklch(0 0 none);
+  --color-gray-950: oklch(0.17648977110319233 0.0016223323056638052 197.00942797578833);
+
+  /* Limon */
+  --color-limon-900: oklch(0.3303158390424599 0.06603040802301907 114.27173860944788);
+  --color-limon-800: oklch(0.513083619122879 0.11405943461134964 115.32741761400602);
+  --color-limon-700: oklch(0.6903925430599089 0.15515249412756954 115.69004191952565);
+  --color-limon-600: oklch(0.8656732229381584 0.19621222503113914 115.79393900943106);
+  --color-limon-500: oklch(0.942268682746917 0.22156018790465623 119.04628905863105);
+  --color-limon-400: oklch(0.969517646200593 0.13919052238405683 112.64273154371466);
+  --color-limon-300: oklch(0.9816022518997163 0.07809261770264472 111.63880003943534);
+  --color-limon-200: oklch(0.9873138463010898 0.04942862171817054 112.18395801650196);
+  --color-limon-100: oklch(0.9911967847264804 0.036496210194296407 110.37608831085704);
+  --color-limon-50: oklch(0.9939370403708546 0.026127906684620485 109.19100388951091);
+  --color-limon-20: oklch(1.0000000000000002 0 none);
+  --color-limon-10: oklch(0.9965254388471594 0.013140708751849925 111.26047963138544 / 0.2);
+
+  /* Legacy Primitive Colors */
+  --color-primitive-black: oklch(0 0 none);
+  --color-primitive-white: oklch(1.0000000000000002 0 none);
+
+
+  /* === ESPACIADOS PRIMITIVOS === */
+  --spacing-primitive-xs: 10px;
+  --spacing-primitive-sm: 11px;
+  --spacing-primitive-md: 12px;
+  --spacing-primitive-lg: 16px;
+  --spacing-primitive-xl: 19px;
+  --spacing-primitive-2xl: 20px;
+  --spacing-primitive-3xl: 21px;
+  --spacing-primitive-4xl: 47px;
+  --spacing-primitive-5xl: 48px;
+  --spacing-primitive-6xl: 49px;
+  --spacing-primitive-7xl: 61px;
+  --spacing-primitive-8xl: 76px;
+  --spacing-primitive-9xl: 100px;
+
+  /* === RADIOS PRIMITIVOS === */
+  --radius-primitive-sm: 8px;
+  --radius-primitive-md: 9.38px;
+  --radius-primitive-lg: 16px;
+  --radius-primitive-xl: 20px;
+
+  /* === TIPOGRAFÍA PRIMITIVA - TAMAÑOS === */
+  --text-12: 12px;
+  --text-14: 14px;
+  --text-16: 16px;
+  --text-20: 20px;
+  --text-24: 24px;
+  --text-30: clamp(24px, 5vw, 30px);
+  --text-36: clamp(28px, 5vw, 36px);
+  --text-48: clamp(32px, 6vw, 48px);
+  --text-60: clamp(40px, 8vw, 60px);
+  --text-72: clamp(48px, 10vw, 72px);
+
+  /* Legacy aliases */
+  --font-size-primitive-xs: var(--text-12);
+  --font-size-primitive-sm: var(--text-14);
+  --font-size-primitive-md: var(--text-16);
+  --font-size-primitive-lg: var(--text-20);
+  --font-size-primitive-xl: var(--text-30);
+  --font-size-primitive-2xl: var(--text-48);
+  --font-size-primitive-3xl: clamp(36px, 8vw, 56px);
+
+  /* === TIPOGRAFÍA PRIMITIVA - LINE HEIGHT === */
+  --line-height-primitive-tight: 1.109;
+  --line-height-primitive-snug: 24px;
+  --line-height-primitive-normal: 28px;
+  --line-height-primitive-relaxed: 36px;
+  --line-height-primitive-loose: 56px;
+
+  /* === TIPOGRAFÍA PRIMITIVA - PESOS === */
+  --font-weight-extrabold: 800;
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-medium: 500;
+  --font-weight-regular: 400;
+  --font-weight-light: 300;
+
+  /* Legacy aliases */
+  --font-weight-primitive-normal: var(--font-weight-regular);
+  --font-weight-primitive-medium: var(--font-weight-medium);
+  --font-weight-primitive-semibold: var(--font-weight-semibold);
+
+  /* === TIPOGRAFÍA PRIMITIVA - FAMILIAS === */
+  --font-family-body: 'Inter', sans-serif;
+  --font-family-special: 'Neulis Cursive', sans-serif;
+
+  /* Legacy aliases */
+  --font-family-primitive-inter: var(--font-family-body);
+  --font-family-primitive-neulis: var(--font-family-special);
+
+  /* === OPACIDADES PRIMITIVAS === */
+  --opacity-primitive-90: 0.9;
+  --opacity-primitive-30: 0.3;
+}

@@ -1,0 +1,189 @@
+/* Botones */
+
+.test-tailwind {
+    color: var(--color-yellow-500);
+}
+
+
+.btn-limon {
+    background-color: light-dark(var(--color-limon-500), var(--color-limon-500));
+    color: var(--color-gray-950);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        background-color: light-dark(var(--color-limon-600), var(--color-limon-600));
+        color: var(--color-gray-950);
+        transform: scale(1.05);
+    }
+
+    &:focus {
+        background-color: light-dark(var(--color-limon-200), var(--color-limon-200));
+        color: var(--color-gray-950);
+    }
+
+    &:active {
+        background-color: light-dark(var(--color-limon-400), var(--color-limon-400));
+        color: var(--color-gray-950);
+    }
+
+    &:disabled {
+        background-color: light-dark(var(--color-gray-100), var(--color-gray-100));
+        color: var(--color-gray-500);
+    }
+}
+
+
+
+
+
+.nav-link {
+    font-size: var(--font-size-primitive-xs);
+    font-weight: var(--font-weight-primitive-normal);
+    line-height: normal;
+    color: var(--color-text-primary);
+    transition: opacity 0.2s;
+}
+
+.nav-link:hover {
+    opacity: 0.7;
+}
+
+.theme-toggle-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    color: var(--color-button-icon);
+}
+
+.theme-toggle-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* Hide sun icon by default (light mode) */
+.sun-icon {
+    display: none;
+}
+
+/* Show moon icon by default (light mode) */
+.moon-icon {
+    display: block;
+}
+
+/* Dark mode: show sun, hide moon */
+.dark .sun-icon {
+    display: block;
+}
+
+.dark .moon-icon {
+    display: none;
+}
+
+.cta-primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: var(--radius-primitive-sm);
+    font-size: var(--font-size-primitive-sm);
+    font-weight: var(--font-weight-primitive-medium);
+    background-color: light-dark(var(--color-limon-500), var(--color-limon-500));
+    color: light-dark(var(--color-primitive-black), var(--color-gray-950));
+    transition: transform 0.2s;
+}
+
+.cta-primary:hover {
+    transform: scale(1.05);
+}
+
+.cta-secondary {
+    padding: 18px 23px;
+    border-radius: var(--radius-primitive-md);
+    font-size: var(--font-size-primitive-sm);
+    font-weight: var(--font-weight-primitive-medium);
+    background-color: light-dark(transparent, transparent);
+    color: light-dark(var(--color-secondary-600), var(--color-limon-500));
+    border: 1px solid light-dark(var(--color-secondary-600), var(--color-limon-500));
+    transition: opacity 0.2s;
+}
+
+.cta-secondary:hover {
+    opacity: 0.8;
+}
+
+.brand-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-weight-primitive-semibold);
+    font-size: var(--font-size-primitive-sm);
+    color: var(--color-text-secondary);
+    opacity: 0.6;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.service-image {
+    position: relative;
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.service-title {
+    font-weight: var(--font-weight-primitive-medium);
+    font-size: var(--font-size-primitive-sm);
+    line-height: var(--line-height-primitive-tight);
+    text-align: center;
+    width: 100%;
+    white-space: pre-wrap;
+    color: var(--color-text-primary);
+}
+
+.carousel-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 23px;
+    border-radius: 9.38px;
+    transition: background-color 0.2s;
+    color: var(--color-button-icon);
+}
+
+.carousel-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.carousel-dot {
+    width: var(--size-carousel-dot);
+    height: var(--size-carousel-dot);
+    border-radius: 50%;
+    background-color: var(--color-state-inactive);
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.carousel-dot.active {
+    background-color: var(--color-state-active);
+}
+
+.carousel-dot:hover {
+    background-color: var(--color-state-hover);
+}

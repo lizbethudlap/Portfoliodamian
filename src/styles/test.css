@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.force-yellow {
+    @apply text-yellow-500;
+}

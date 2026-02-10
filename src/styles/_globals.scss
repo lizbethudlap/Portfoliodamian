@@ -1,0 +1,159 @@
+/**
+ * TOKENS SEMÁNTICOS - LIGHT MODE
+ * Estos tokens referencian a los primitivos y definen el significado semántico
+ */
+@theme {
+  /* === MARCA === */
+  --color-brand-primary: var(--color-limon-500);
+  --color-brand-secondary: var(--color-blue-800);
+
+  /* === FIGMA VARIABLES (Imported) === */
+  --color-typography-primary-dark: #001c56;
+  --color-buttons-link-base: #004cc6;
+  --color-surface-primary-light: #c6cfff;
+  --color-surface-neutral-darker: #101111;
+  --color-surface-neutral-white: #ffffffe5;
+  --color-buttons-primary-typography: #000000;
+  --color-buttons-primary-base: #ddff00;
+  --color-secondary-600: #ccdb2a;
+  --color-surface-primary-dark: #00103c;
+  --color-surface-neutral-dark: #101111;
+  --color-surface-secondary-dark: #283833;
+  --color-typography-neutral-light: #ffffffe5;
+  --color-surface-neutral-cristal: #ffffff4d;
+  --color-surface-primary-darker: #01061b;
+
+  /* === SUPERFICIES === */
+  --color-surface-background: var(--color-blue-100);
+  --color-surface-header: var(--color-blue-100);
+  --color-surface-section-primary: var(--color-primitive-white);
+  --color-surface-section-secondary: var(--color-blue-100);
+  --color-surface-section-dark: var(--color-gray-900);
+  --color-surface-card: var(--color-primitive-white);
+  --color-surface-overlay: rgb(255 255 255 / var(--opacity-primitive-30));
+
+  /* === TEXTO === */
+  --color-text-primary: var(--color-blue-800);
+  --color-text-secondary: var(--color-blue-900);
+  --color-text-inverse: var(--color-primitive-white);
+  --color-text-inverse-muted: rgb(255 255 255 / var(--opacity-primitive-90));
+  --color-text-brand: var(--color-limon-500);
+  --color-text-muted: var(--color-gray-950);
+
+  /* === BOTONES === */
+  --color-button-primary-bg: var(--color-limon-500);
+  --color-button-primary-text: var(--color-primitive-black);
+  --color-button-secondary-bg: transparent;
+  --color-button-secondary-text: var(--color-secondary-600);
+  --color-button-secondary-border: var(--color-secondary-600);
+  --color-button-icon: var(--color-blue-700);
+
+  /* === ESTADOS === */
+  --color-state-active: var(--color-gray-950);
+  --color-state-inactive: var(--color-gray-950);
+  --color-state-hover: var(--color-gray-800);
+
+  /* === BORDES === */
+  --color-border-default: var(--color-secondary-600);
+
+  /* === LAYOUT === */
+  --size-header-height: 66px;
+  --size-card-width: 237px;
+  --size-card-image-height: 275px;
+  --size-icon-sm: 18px;
+  --size-icon-md: 21.105px;
+  --size-carousel-dot: 13px;
+}
+
+/**
+ * TOKENS SEMÁNTICOS - DARK MODE
+ */
+:root.dark {
+  --color-surface-background: var(--color-primitive-black);
+  --color-surface-header: var(--color-primitive-black);
+  --color-surface-section-primary: var(--color-primitive-black);
+  --color-surface-section-secondary: var(--color-primitive-black);
+  --color-surface-section-dark: var(--color-primitive-black);
+  --color-surface-card: var(--color-primitive-black);
+
+  --color-text-primary: var(--color-limon-300);
+  --color-text-secondary: var(--color-limon-300);
+  --color-text-brand: var(--color-limon-500);
+
+  --color-button-primary-text: var(--color-gray-950);
+  --color-button-icon: var(--color-limon-500);
+
+  --color-state-active: var(--color-green-400);
+  --color-state-inactive: var(--color-gray-100);
+  --color-state-hover: var(--color-green-400);
+}
+
+/**
+ * BASE STYLES
+ */
+@layer base {
+  :root {
+    color-scheme: light;
+  }
+
+  :root.dark,
+  .dark {
+    color-scheme: dark;
+  }
+
+  * {
+    outline-color: rgb(180 180 180 / 0.5);
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-surface-background);
+    color: var(--color-text-primary);
+    font-family: var(--font-family-primitive-inter);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: var(--font-size-primitive-3xl);
+    font-weight: var(--font-weight-primitive-semibold);
+    line-height: var(--line-height-primitive-loose);
+  }
+
+  h2 {
+    font-size: var(--font-size-primitive-2xl);
+    font-weight: var(--font-weight-primitive-semibold);
+    line-height: var(--line-height-primitive-loose);
+  }
+
+  h3 {
+    font-size: var(--font-size-primitive-xl);
+    font-weight: var(--font-weight-primitive-semibold);
+    line-height: var(--line-height-primitive-relaxed);
+  }
+
+  h4 {
+    font-size: var(--font-size-primitive-lg);
+    font-weight: var(--font-weight-primitive-medium);
+    line-height: var(--line-height-primitive-normal);
+  }
+
+  button {
+    font-size: var(--font-size-primitive-sm);
+    font-weight: var(--font-weight-primitive-medium);
+    line-height: var(--line-height-primitive-snug);
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
